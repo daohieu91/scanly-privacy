@@ -129,15 +129,17 @@
   <li><strong>Google Play Billing:</strong> when you purchase Pro, Google handles the transaction. We receive only a confirmation that you own the Pro entitlement — we never see your payment details. Google's handling of payment data is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
   <li><strong>Google Play in-app review:</strong> when you tap "Rate Us" in Settings, Google's native rating prompt is launched.</li>
   <li><strong>Google Play Services (ML Kit):</strong> the first time you use OCR for Korean, Chinese, Japanese, or Devanagari scripts, Google Play Services downloads the recognizer module to your device. After download, the recognition runs entirely on your phone — your scanned text is not sent to Google.</li>
+  <li><strong>Firebase Crashlytics:</strong> when Scanly crashes or experiences an ANR (Application Not Responding), Crashlytics sends an anonymous report to Google containing the crash stacktrace, your device model, Android version, Scanly version, and a few non-identifying tags we set (whether you're on Free or Pro tier, your current app language, and the last few screens you visited). This helps us fix bugs. No personal information is included.</li>
+  <li><strong>Firebase Analytics:</strong> Scanly sends anonymous usage events (e.g., "scan completed", "Pro upgrade tapped") to help us understand which features are used. Analytics also collects standard device info: model, Android version, country (derived from your IP), language, and Google's Advertising ID. We do <strong>not</strong> send any contents of your scans, your OCR text, your QR scans, or any personal information.</li>
+  <li><strong>Firebase Performance Monitoring:</strong> Scanly measures how long key operations take (e.g., OCR extraction time, PDF export time) and sends timing data to Google so we can detect performance regressions. No content is sent — only timing numbers.</li>
 </ul>
 
-<h3>3.3 Data we explicitly do NOT collect (current version)</h3>
+<h3>3.3 Data we explicitly do NOT collect</h3>
 <ul>
-  <li>No analytics events</li>
-  <li>No crash reports</li>
-  <li>No advertising identifiers</li>
-  <li>No personal information of any kind</li>
+  <li>No advertising identifiers used for ad targeting (we collect Google's Advertising ID as part of Firebase Analytics' standard data, but we do not show ads and do not use this ID for ad targeting)</li>
+  <li>No personal information of any kind (name, email, address, phone)</li>
   <li>No third-party trackers, cookies, or ad networks</li>
+  <li>No contents of your scans, OCR text, or QR scans</li>
 </ul>
 
 <h2>4. Permissions and why</h2>
@@ -148,13 +150,13 @@
 </ul>
 
 <h2>5. Third-party services</h2>
-<p>Scanly uses two Google services. Each has its own privacy policy:</p>
+<p>Scanly uses Google services. Each is covered by Google's privacy policy:</p>
 <ul>
-  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> — covers Google Play Billing, Google Play in-app review, and Google Play Services (ML Kit).</li>
+  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> — covers Google Play Billing, Google Play in-app review, Google Play Services (ML Kit), Firebase Crashlytics, Firebase Analytics, and Firebase Performance Monitoring.</li>
 </ul>
 
 <h2>6. Future changes</h2>
-<p>Scanly may add anonymous usage analytics and crash reporting in a future version to help us understand which features are used and to fix bugs more quickly. If we do, we will:</p>
+<p>Scanly may add additional third-party services (e.g., cloud sync, ad networks, in-app messaging) in future versions. If we do, we will:</p>
 <ul>
   <li>Update this page with the new disclosure and bump the "Last updated" date.</li>
   <li>Add a notice in Scanly's Settings screen pointing to the updated policy.</li>
