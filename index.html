@@ -99,11 +99,11 @@
 <main>
 
 <h1>Privacy Policy — Scanly</h1>
-<p class="updated">Last updated: May 30, 2026</p>
+<p class="updated">Last updated: June 24, 2026</p>
 
 <section class="tldr">
   <h2>The short version</h2>
-  <p>Your scanned documents stay on your phone. We don't have analytics, crash reporting, or ads in this version of Scanly. The app talks to Google for one thing only: processing Pro purchases through Google Play Billing.</p>
+  <p>Your scanned documents stay on your phone. The free version of Scanly shows ads through Google AdMob, and Scanly Pro (a one-time purchase) removes them. We also use Google's Firebase for anonymous analytics, crash reports, and performance timing, plus Google Play Billing for Pro purchases. We never upload the contents of your scans.</p>
   <p>We don't have accounts, sign-ups, or any way to identify you personally. Uninstalling the app wipes every scan, every OCR result, and every setting.</p>
   <p>Email <a href="mailto:hieu.dtvt10@gmail.com">hieu.dtvt10@gmail.com</a> if you have any privacy question.</p>
 </section>
@@ -132,14 +132,14 @@
   <li><strong>Firebase Crashlytics:</strong> when Scanly crashes or experiences an ANR (Application Not Responding), Crashlytics sends an anonymous report to Google containing the crash stacktrace, your device model, Android version, Scanly version, and a few non-identifying tags we set (whether you're on Free or Pro tier, your current app language, and the last few screens you visited). This helps us fix bugs. No personal information is included.</li>
   <li><strong>Firebase Analytics:</strong> Scanly sends anonymous usage events (e.g., "scan completed", "Pro upgrade tapped") to help us understand which features are used. Analytics also collects standard device info: model, Android version, country (derived from your IP), language, and Google's Advertising ID. We do <strong>not</strong> send any contents of your scans, your OCR text, your QR scans, or any personal information.</li>
   <li><strong>Firebase Performance Monitoring:</strong> Scanly measures how long key operations take (e.g., OCR extraction time, PDF export time) and sends timing data to Google so we can detect performance regressions. No content is sent — only timing numbers.</li>
+  <li><strong>Google AdMob (ads — free version only):</strong> the free version of Scanly shows ads served by Google AdMob. To serve and measure ads, Google may process your device's Advertising ID, IP-derived coarse location, device information, and ad-interaction data, as described in <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a>. In the EEA/UK, a Google consent screen (User Messaging Platform) lets you choose between personalized and non-personalized ads before any ad loads. The contents of your scans, OCR text, and QR scans are never shared with AdMob. <strong>Scanly Pro removes all ads</strong> — a Pro device never even initializes the ads SDK.</li>
 </ul>
 
 <h3>3.3 Data we explicitly do NOT collect</h3>
 <ul>
-  <li>No advertising identifiers used for ad targeting (we collect Google's Advertising ID as part of Firebase Analytics' standard data, but we do not show ads and do not use this ID for ad targeting)</li>
   <li>No personal information of any kind (name, email, address, phone)</li>
-  <li>No third-party trackers, cookies, or ad networks</li>
-  <li>No contents of your scans, OCR text, or QR scans</li>
+  <li>No accounts, sign-ups, or any way to identify you personally</li>
+  <li>No contents of your scans, OCR text, or QR scans — these never leave your device, including to the ad network</li>
 </ul>
 
 <h2>4. Permissions and why</h2>
@@ -153,6 +153,7 @@
 <p>Scanly uses Google services. Each is covered by Google's privacy policy:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> — covers Google Play Billing, Google Play in-app review, Google Play Services (ML Kit), Firebase Crashlytics, Firebase Analytics, and Firebase Performance Monitoring.</li>
+  <li><strong>Google AdMob</strong> (ads in the free version) and <strong>Google User Messaging Platform</strong> (EEA/UK consent) — see <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a>. Scanly Pro removes all ads.</li>
 </ul>
 
 <h2>6. Future changes</h2>
@@ -160,7 +161,7 @@
 <ul>
   <li>Update this page with the new disclosure and bump the "Last updated" date.</li>
   <li>Add a notice in Scanly's Settings screen pointing to the updated policy.</li>
-  <li>Never add third-party advertising trackers without an explicit opt-in flow.</li>
+  <li>Where consent is legally required (e.g. EEA/UK), show a consent screen before requesting personalized ads — as we already do for AdMob via Google's User Messaging Platform.</li>
 </ul>
 
 <h2>7. Your rights</h2>
@@ -172,18 +173,18 @@
 </ul>
 
 <h3>7.2 GDPR (European Union users)</h3>
-<p>Where the General Data Protection Regulation applies to you, you have the right to access, rectify, erase, restrict, object to, and port your personal data. Because Scanly does not collect personal data in the current version, these rights are largely already satisfied by uninstalling the app.</p>
+<p>Where the General Data Protection Regulation applies to you, you have the right to access, rectify, erase, restrict, object to, and port your personal data. Scanly itself stores no directly identifying data about you. The free version's ads (Google AdMob) process your Advertising ID and similar identifiers; in the EEA/UK you control personalized ads through the consent screen shown on first launch, and you can reset or delete your Advertising ID in Android Settings. Upgrading to Pro stops all ad-related data collection.</p>
 <ul>
-  <li><strong>Lawful basis:</strong> contract performance (for processing your Pro purchase via Google Play Billing) and legitimate interest (basic app functionality).</li>
+  <li><strong>Lawful basis:</strong> contract performance (processing your Pro purchase via Google Play Billing), your consent (for personalized ads, via Google's consent screen), and legitimate interest (basic app functionality, anonymous analytics, and non-personalized ads).</li>
   <li><strong>Lodging a complaint:</strong> you have the right to lodge a complaint with your local Data Protection Authority. For a list, see <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener">EDPB member authorities</a>.</li>
 </ul>
 
 <h3>7.3 CCPA (California users)</h3>
-<p>The California Consumer Privacy Act gives California residents specific rights regarding personal information. Scanly does <strong>not</strong> sell or share your personal information with anyone. We do not collect personal information in the current version, so:</p>
+<p>The California Consumer Privacy Act gives California residents specific rights regarding personal information. Scanly does <strong>not</strong> sell your personal information. In the free version, limited identifiers (such as your Advertising ID) are shared with Google AdMob to show ads — which California law may treat as "sharing" for cross-context behavioral advertising.</p>
 <ul>
-  <li><strong>Right to know:</strong> we collect no personal information about you.</li>
+  <li><strong>Right to know:</strong> Scanly stores no personal information about you; the only data leaving your device is anonymous Firebase analytics/crash data and (in the free version) ad identifiers sent to Google.</li>
   <li><strong>Right to delete:</strong> uninstalling Scanly deletes all local data.</li>
-  <li><strong>Right to opt-out of sale:</strong> not applicable — we don't sell anything.</li>
+  <li><strong>Right to opt-out of sharing:</strong> we don't sell data; to stop ad-related sharing, opt out of personalized ads via the consent screen (EEA/UK) or Android's ad settings, or upgrade to Pro to remove ads entirely.</li>
   <li><strong>Right to non-discrimination:</strong> Scanly will not treat you differently for exercising any of these rights.</li>
 </ul>
 
